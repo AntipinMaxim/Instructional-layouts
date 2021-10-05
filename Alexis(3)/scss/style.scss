@@ -86,6 +86,7 @@ body {
 
 /*-------------------------------ОБЩИЕ---------------------------------------*/
 .link-page {
+	text-align: c;
 	display: inline-block;
 	box-sizing: border-box;
 	width: 180px;
@@ -209,7 +210,6 @@ body {
 .section-title {
 	font-family: "Libre Baskerville";
 	font-size: 50px;
-	line-height: 80px;
 	font-weight: 700;
 	color: #313131;
 }
@@ -254,7 +254,6 @@ body {
 }
 .section-subtitle {
 	font-size: 18px;
-	line-height: 80px;
 }
 .focus__image {
 	display: none; //------------------------------
@@ -493,7 +492,7 @@ body {
 
 /*-------------------------------worksteps---------------------------------------*/
 .worksteps {
-	padding-top: 147px;
+	padding: 147px 0;
 }
 .worksteps__container {
 }
@@ -558,4 +557,227 @@ body {
 .block-text__text {
 }
 .worksteps__planning {
+}
+
+/*-------------------------------pricing---------------------------------------*/
+.pricing {
+	padding: 140px 0;
+	background: #f7f7f7;
+}
+.pricing__container {
+}
+
+.pricing__main {
+	text-align: center;
+}
+.pricing__title {
+	margin-bottom: 25px;
+}
+.pricing__subtitle {
+	margin-bottom: 77px;
+}
+.pricing__list {
+}
+.pricing-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	gap: 30px;
+}
+.pricing-list__item {
+	padding: 38px 80px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.pricing-list__title {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #313131;
+}
+.pricing-list__img {
+	position: relative;
+	width: 106px;
+	height: 106px;
+	margin: 0 auto;
+}
+.pricing-list__img {
+	margin-bottom: 40px;
+}
+
+.pricing-list__cost {
+	width: 106px;
+	height: 106px;
+	top: 30px;
+	left: 0;
+	position: absolute;
+	font-size: 25px;
+	line-height: 20px;
+	color: #ffffff;
+}
+.pricing-list__text {
+	display: block;
+	padding-top: 5px;
+	font-size: 13px;
+}
+.pricing-list__possibilities-list {
+}
+.possibilities-list {
+	margin-bottom: 20px;
+}
+.possibilities-list__item {
+}
+.possibilities-list__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/*-------------------------------testimonials---------------------------------------*/
+.testimonials {
+	background-color: rgba(38, 39, 50, 0.85);
+	padding: 130px;
+}
+.testimonials__container {
+}
+.testimonials__main {
+	text-align: center;
+}
+.testimonials__title {
+	font-family: "Libre Baskerville", serif;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.testimonials__subtitle {
+	margin-bottom: 70px;
+	color: #ffffff;
+}
+.testimonials__wrapper {
+	display: flex;
+	align-items: center;
+}
+.testimonials__text {
+	text-align: left;
+	overflow: hidden;
+	padding: 40px 50px;
+	max-width: 822px;
+	max-height: 312px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+}
+.testimonials__author {
+}
+
+/*-------------------------------select---------------------------------------*/
+.select {
+	padding: 140px 0;
+}
+.select__container {
+}
+.select__main {
+	text-align: center;
+}
+.select__title {
+	margin-bottom: 25px;
+}
+.select__subtitle {
+	margin-bottom: 70px;
+}
+.select__list {
+	margin-bottom: 140px;
+}
+.select-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
+	gap: 70px;
+}
+.select-list__item {
+	text-align: left;
+}
+.select-list__head {
+	display: flex;
+	margin-bottom: 25px;
+}
+.select-list__icon {
+	margin: 0 10px 0 0;
+}
+.select-list__title {
+	max-width: 50px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	color: #272727;
+}
+.select-list__text {
+}
+.select__start {
+	font-size: 25px;
+	line-height: 26px;
+	color: #272727;
+}
+.select__label {
+	margin-right: 24px;
+}
+
+/*-------------------------------blog---------------------------------------*/
+.blog {
+	margin: 140px 0;
+	background-color: #f7f7f7;
+}
+.blog__container {
+}
+.blog__main {
+	text-align: center;
+}
+.blog__title {
+	margin-bottom: 23px;
+}
+.blog__subtitle {
+	margin-bottom: 77px;
+}
+.posts__list {
+}
+.posts-list {
+	display: grid;
+	grid-template-areas:
+		"activ ."
+		"activ ."
+		"activ .";
+	gap: 20px;
+	text-align: left;
+}
+.posts-list__post {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+	padding: 10px;
+}
+.posts-list__post--active-post {
+	max-width: 555px;
+	grid-area: activ;
+	padding: 0;
+}
+.posts-list__img {
+}
+.posts-list__info {
+	padding: 10px;
+}
+.posts-list__author {
+	
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fc5f45;
+}
+.posts-list__date {
+	opacity: 0.7;
+	font-size: 13px;
+	line-height: 35px;
+	color: #ffffff;
+}
+.posts-list__title {
+	font-family: Poppins;
+font-size: 20px;
+line-height: 35px;
+font-weight: 500;
+color: #272727;
+}
+.posts-list__text {
+line-height: 27px;
+
 }

@@ -718,7 +718,7 @@ body {
 
 /*-------------------------------blog---------------------------------------*/
 .blog {
-	margin: 140px 0;
+	padding: 140px 0;
 	background-color: #f7f7f7;
 }
 .blog__container {
@@ -746,38 +746,83 @@ body {
 .posts-list__post {
 	background-color: #ffffff;
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
-	padding: 10px;
+	padding: 30px;
 }
 .posts-list__post--active-post {
 	max-width: 555px;
 	grid-area: activ;
 	padding: 0;
 }
+.posts-list__post--active-post .posts-list__info {
+	position: absolute;
+	bottom: 35px;
+	left: 50px;
+}
 .posts-list__img {
+	position: relative;
 }
-.posts-list__info {
-	padding: 10px;
+.posts-list__post--active-post .posts-list__img img {
+	display: block;
 }
-.posts-list__author {
-	
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #fc5f45;
+.posts-list__img img {
+	display: none;
 }
-.posts-list__date {
+posts-list__img .posts-list__post--active-post .posts-list__date {
 	opacity: 0.7;
 	font-size: 13px;
 	line-height: 35px;
 	color: #ffffff;
 }
+
+.posts-list__info {
+}
+.posts-list__author {
+	margin-right: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fc5f45;
+}
+.posts-list__date {
+	font-size: 13px;
+	line-height: 35px;
+	color: #616161;
+}
+.posts-list__wrapper {
+	padding: 30px;
+}
 .posts-list__title {
 	font-family: Poppins;
-font-size: 20px;
-line-height: 35px;
-font-weight: 500;
-color: #272727;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 500;
+	color: #272727;
 }
 .posts-list__text {
-line-height: 27px;
+	line-height: 27px;
+}
 
+/*-------------------------------subscribe---------------------------------------*/
+.subscribe {
+}
+.subscribe__container {
+}
+.subscribe__main {
+}
+.subscribe__title {
+}
+.subscribe__form {
+}
+.subscribe__input {
+	width: 480px;
+	height: 50px;
+	background-color: #f7f7f7;
+	border: 2px solid #efefef;
+	border-radius: 25px 0 0 25px;
+}
+.subscribe__btn {
+	margin-left: -5px;
+	width: 180px;
+	height: 50px;
+	background-color: #fc5f45;
+	border-radius: 0px 25px 25px 0px;
 }

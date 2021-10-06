@@ -246,6 +246,7 @@ body {
 	text-align: center;
 }
 .focus__title {
+	margin-bottom: 40px;
 }
 .section-title {
 }
@@ -323,6 +324,7 @@ body {
 	text-align: center;
 }
 .portfolio__title {
+	margin-bottom: 40px;
 }
 .section-title {
 }
@@ -349,8 +351,10 @@ body {
 	text-align: center;
 }
 .team__title {
+	margin-bottom: 40px;
 }
 .team__subtitle {
+	margin-bottom: 70px;
 }
 .section-subtitle {
 }
@@ -500,6 +504,7 @@ body {
 	text-align: center;
 }
 .worksteps__title {
+	margin-bottom: 40px;
 }
 .section-title {
 }
@@ -571,7 +576,7 @@ body {
 	text-align: center;
 }
 .pricing__title {
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 .pricing__subtitle {
 	margin-bottom: 77px;
@@ -643,7 +648,7 @@ body {
 .testimonials__title {
 	font-family: "Libre Baskerville", serif;
 	color: #ffffff;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 .testimonials__subtitle {
 	margin-bottom: 70px;
@@ -675,7 +680,7 @@ body {
 	text-align: center;
 }
 .select__title {
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 .select__subtitle {
 	margin-bottom: 70px;
@@ -727,7 +732,7 @@ body {
 	text-align: center;
 }
 .blog__title {
-	margin-bottom: 23px;
+	margin-bottom: 40px;
 }
 .blog__subtitle {
 	margin-bottom: 77px;
@@ -758,6 +763,16 @@ body {
 	bottom: 35px;
 	left: 50px;
 }
+.posts-list__date {
+	font-size: 13px;
+	color: #616161;
+}
+.posts-list__post--active-post .posts-list__date {
+	opacity: 0.7;
+	font-size: 13px;
+	color: #ffffff;
+}
+
 .posts-list__img {
 	position: relative;
 }
@@ -766,12 +781,6 @@ body {
 }
 .posts-list__img img {
 	display: none;
-}
-posts-list__img .posts-list__post--active-post .posts-list__date {
-	opacity: 0.7;
-	font-size: 13px;
-	line-height: 35px;
-	color: #ffffff;
 }
 
 .posts-list__info {
@@ -782,11 +791,7 @@ posts-list__img .posts-list__post--active-post .posts-list__date {
 	text-transform: uppercase;
 	color: #fc5f45;
 }
-.posts-list__date {
-	font-size: 13px;
-	line-height: 35px;
-	color: #616161;
-}
+
 .posts-list__wrapper {
 	padding: 30px;
 }
@@ -803,12 +808,18 @@ posts-list__img .posts-list__post--active-post .posts-list__date {
 
 /*-------------------------------subscribe---------------------------------------*/
 .subscribe {
+	padding: 149px 0;
 }
 .subscribe__container {
 }
 .subscribe__main {
+	text-align: center;
 }
 .subscribe__title {
+	font-size: 30px;
+	line-height: 85px;
+	color: #272727;
+	margin-bottom: 53px;
 }
 .subscribe__form {
 }
@@ -818,6 +829,9 @@ posts-list__img .posts-list__post--active-post .posts-list__date {
 	background-color: #f7f7f7;
 	border: 2px solid #efefef;
 	border-radius: 25px 0 0 25px;
+	font-size: 16px;
+	color: #616161;
+	padding-left: 29px;
 }
 .subscribe__btn {
 	margin-left: -5px;
@@ -825,4 +839,139 @@ posts-list__img .posts-list__post--active-post .posts-list__date {
 	height: 50px;
 	background-color: #fc5f45;
 	border-radius: 0px 25px 25px 0px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+/*-------------------------------getintouch---------------------------------------*/
+.getintouch {
+	background: #cccccc;
+	padding: 130px 0;
+}
+.getintouch__container {
+}
+.getintouch__main {
+	text-align: center;
+	margin-bottom: 150px;
+}
+.getintouch__title {
+	margin: 39px;
+}
+.getintouch__subtitle {
+	margin-bottom: 78px;
+}
+.getintouch__form {
+	font-size: 16px;
+	margin: 0 auto 51px auto;
+	max-width: 750px;
+	height: 360px;
+	display: grid;
+	gap: 10px;
+	grid-template-areas:
+		"name mail"
+		"subject budget"
+		"massage massage";
+}
+.getintouch__form input {
+	background-color: #ffffff;
+	border: 1px solid #efefef;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.name {
+	grid-area: name;
+}
+.mail {
+	grid-area: mail;
+}
+.subject {
+	grid-area: subject;
+}
+.budget {
+	grid-area: budget;
+}
+.massage {
+	padding-top: 10px;
+	text-align: center;
+	grid-area: massage;
+	width: 750px;
+	height: 200px;
+	background-color: #ffffff;
+	border: 1px solid #efefef;
+	border-radius: 4px;
+}
+.link-page {
+}
+.link-page--color_orange {
+}
+
+/*-------------------------------footer---------------------------------------*/
+.footer {
+}
+.footer__container {
+}
+.footer__main {
+	background-color: rgba(38, 39, 50, 0.85);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px;
+}
+.footer__logo .logo__link {
+	font-size: 50px;
+	color: #fef4f2;
+}
+.logo {
+}
+.logo__link {
+}
+.logo__letter--red {
+}
+.footer__company {
+}
+
+.company {
+	max-width: 205px;
+}
+.company span {
+	display: block;
+}
+.company__name {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.company__name--green {
+	color: #38c695;
+}
+.company__address {
+	font-size: 16px;
+	color: #fef4f2;
+}
+.company__name--violet {
+	color: #b27cf5;
+}
+.footer__follow {
+}
+.follow{
+	margin-top: -10px;
+}
+.follow__list{
+	display: flex;
+}
+.follow__title {
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+	color: #feb960;
+	margin-bottom: 35px;
+}
+.follow__icon {
+
+}
+.follow__icon:not(:last-child) {
+	margin-right: 15px;
 }

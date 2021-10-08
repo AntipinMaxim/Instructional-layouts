@@ -225,6 +225,7 @@ body {
   text-align: center;
 }
 .whatwedo__title {
+  position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -233,6 +234,21 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 44px;
+}
+.whatwedo__title::before {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  padding-left: 90px;
+  margin-right: 20px;
+}
+.whatwedo__title::after {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  height: 100%;
+  padding-left: 90px;
+  margin-left: 20px;
 }
 .services__list {
   display: -ms-grid;
@@ -305,23 +321,20 @@ body {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-.ourprocess__title::after {
-  content: "";
-  background: url(/img/content/line.svg) no-repeat;
-  position: absolute;
-  top: 90px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .ourprocess__title::before {
   content: "";
-  background: url(/img/content/line.svg) no-repeat;
-  position: absolute;
-  top: 90px;
-  left: 263px;
-  width: 100%;
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  padding-left: 90px;
+  margin-right: 20px;
+}
+.ourprocess__title::after {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
   height: 100%;
+  padding-left: 90px;
+  margin-left: 20px;
 }
 .ourprocess__text {
   text-align: center;
@@ -366,7 +379,6 @@ body {
           align-items: center;
 }
 .menu-process__item:not(:last-child)::after {
-  content: "";
   background: url(/img/content/line.svg) 0 0/100% auto no-repeat;
   position: absolute;
   top: 50px;
@@ -418,21 +430,18 @@ body {
 }
 .recent__title::before {
   content: "";
-  background: url(/img/content/line.svg) no-repeat;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  padding-left: 90px;
+  margin-right: 20px;
 }
 .recent__title::after {
   content: "";
-  background: url(/img/content/line.svg) no-repeat;
-  position: absolute;
-  top: 10px;
-  left: 312px;
-  width: 100%;
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
   height: 100%;
+  padding-left: 90px;
+  margin-left: 20px;
 }
 .recent .list {
   display: -ms-grid;
@@ -498,6 +507,21 @@ body {
   color: #d0d0d0;
   margin-bottom: 40px;
 }
+.customers__title::before {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  padding-left: 90px;
+  margin-right: 20px;
+}
+.customers__title::after {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  height: 100%;
+  padding-left: 90px;
+  margin-left: 20px;
+}
 .customers__text {
   font-size: 20px;
   line-height: 35px;
@@ -538,6 +562,21 @@ body {
   color: #616161;
   padding: 10px;
   margin-bottom: 39px;
+}
+.journal__title::before {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  padding-left: 90px;
+  margin-right: 20px;
+}
+.journal__title::after {
+  content: "";
+  background: url("/Studio(2)/img/content/line.svg") 50% no-repeat;
+  width: 95px;
+  height: 100%;
+  padding-left: 90px;
+  margin-left: 20px;
 }
 .cards__list {
   display: -webkit-box;

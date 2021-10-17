@@ -127,6 +127,7 @@ body {
   margin-bottom: 33px;
 }
 .header__logo {
+  margin-right: 20px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 26px;
@@ -236,21 +237,28 @@ body {
           justify-content: space-between;
 }
 .header-middle__wrapper {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1;
+          flex: 2 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .form-search {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 46px;
-  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 30px;
 }
 .form-search__input {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   padding: 0 10px;
 }
@@ -298,7 +306,6 @@ body {
 }
 .basket__text {
   padding: 0 13px;
-  white-space: nowrap;
 }
 
 .header-bottom__container {
@@ -378,10 +385,14 @@ body {
 }
 
 /*-----------------------------main-nav----------------------------*/
-.main-nav__list {
+.active {
+  display: none;
+}
+
+.aside__list {
   width: 270px;
 }
-.main-nav__link {
+.aside__link {
   font-family: "Font Awesome";
   font-size: 14px;
   font-family: Roboto;
@@ -392,26 +403,30 @@ body {
 }
 
 /*-----------------------------nav-slider----------------------------*/
-.nav-slider {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.main-nav {
-  width: 270px;
+.aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 270px;
+          flex: 0 0 270px;
   margin-right: 20px;
 }
 .slider-offer {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-          flex: 1 0;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
   background: url("/Magazin(4)/images/slider-offer/slider.jpg") no-repeat;
   margin: 20px 0;
-  padding: 150px 0 0 86px;
+  padding: 150px 0 206px 86px;
 }
 .slider-offer__title {
   font-family: Poppins;
@@ -441,4 +456,93 @@ body {
   width: 94px;
   height: 34px;
   background-color: #ffffff;
+}
+
+/*----------------------------sale---------------------------*/
+.sale-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+.sale-menu__block {
+  background-color: #d0d0d0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 367px;
+          flex: 1 1 367px;
+  height: 209px;
+  padding: 64px 189px 64px 26px;
+}
+.sale-menu__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+.sale-menu__label {
+  margin-bottom: 18px;
+}
+.sale-menu__price {
+  margin-bottom: 16px;
+}
+.sale-menu .block-1 {
+  margin-right: 20px;
+  color: #ffffff;
+}
+.sale-menu .block-1 .sale__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 153px;
+  height: 22px;
+  background-color: #a5c655;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sale-menu .block-2 {
+  margin-right: 20px;
+}
+.sale-menu .block-2 .sale__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 97px;
+  height: 22px;
+  background-color: #24bbbc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+.sale-menu .block-3 .sale__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 74px;
+  height: 20px;
+  background-color: #fcf7f4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #323232;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
 }

@@ -47,6 +47,7 @@ body {
 	// .header__logo
 
 	&__logo {
+		margin-right: 20px;
 		font-family: Raleway;
 		font-size: 26px;
 		line-height: 26px;
@@ -185,18 +186,19 @@ body {
 		justify-content: space-between;
 	}
 	&__wrapper {
+		flex: 2 1;
 		display: flex;
 	}
 }
 .form-search {
+	flex: 1;
 	height: 46px;
-	width: 600px;
 	display: flex;
 	margin-right: 30px;
 	// .form-search__input
 
 	&__input {
-		width: 100%;
+		flex: 1;
 		height: 100%;
 		padding: 0 10px;
 	}
@@ -240,7 +242,6 @@ body {
 
 	&__text {
 		padding: 0 13px;
-		white-space: nowrap;
 	}
 }
 .header-bottom {
@@ -269,7 +270,6 @@ body {
 	}
 
 	// .catalog__icon
-
 	&__icon {
 		height: 12px;
 		width: 16px;
@@ -330,7 +330,10 @@ body {
 }
 
 /*-----------------------------main-nav----------------------------*/
-.main-nav {
+.active {
+	display: none;
+}
+.aside {
 	// .main-nav__list
 
 	&__list {
@@ -356,12 +359,13 @@ body {
 }
 
 /*-----------------------------nav-slider----------------------------*/
-.nav-slider {
+.main {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.main-nav {
-	width: 270px;
+.aside {
+	flex: 0 0 270px;
 	margin-right: 20px;
 	// .main-nav__list
 
@@ -380,10 +384,10 @@ body {
 }
 
 .slider-offer {
-	flex: 1 0;
+	flex: 1 1 0px;
 	background: url("/Magazin(4)/images/slider-offer/slider.jpg") no-repeat;
 	margin: 20px 0;
-	padding: 150px 0 0 86px;
+	padding: 150px 0 206px 86px;
 	// .slider-offer__title
 
 	&__title {
@@ -420,5 +424,89 @@ body {
 		width: 94px;
 		height: 34px;
 		background-color: #ffffff;
+	}
+}
+
+/*----------------------------sale---------------------------*/
+
+.sale-menu {
+	display: flex;
+	justify-content: space-between;
+	flex: 1 1 100%;
+
+	&__block {
+		background-color: #d0d0d0;
+		flex: 1 1 367px;
+		height: 209px;
+		padding: 64px 189px 64px 26px;
+	}
+
+	// .sale__title
+
+	&__title {
+		font-family: "Poppins", sans-serif;
+		font-size: 21px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: -0.03em;
+		margin-bottom: 10px;
+	}
+
+	// .sale__label
+
+	&__label {
+		margin-bottom: 18px;
+	}
+
+	// .sale__price
+
+	&__price {
+		margin-bottom: 16px ;
+	}
+
+	// .block-1
+
+	.block-1 {
+		margin-right: 20px;
+		color: #ffffff;
+		.sale__label {
+			display: flex;
+			width: 153px;
+			height: 22px;
+			background-color: #a5c655;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	//	.block-2
+
+	.block-2 {
+		margin-right: 20px;
+		.sale__label {
+			display: flex;
+			width: 97px;
+			height: 22px;
+			background-color: #24bbbc;
+			justify-content: center;
+			align-items: center;
+			color: #ffffff;
+		}
+	}
+
+	//	.block-3
+
+	.block-3 {
+		.sale__label {
+			display: flex;
+			width: 74px;
+			height: 20px;
+			background-color: #fcf7f4;
+			justify-content: center;
+			align-items: center;
+			color: #323232;
+			font-size: 10px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
 	}
 }

@@ -1100,7 +1100,7 @@ body {
 
 .projects {
 	width: 100%;
-	padding: 80px 0 120px 0;
+	padding: 80px 0 0;
 	// .projects__gallery
 
 	&__gallery {
@@ -1149,6 +1149,8 @@ body {
 		}
 	}
 }
+
+/*------------------------POST----------------------------------*/
 
 .post {
 	background: url("../images/post/background.png") center/100% 100% no-repeat;
@@ -1207,6 +1209,100 @@ body {
 	}
 }
 
+/*------------------------BLOG----------------------------------*/
+.blog {
+	padding: 100px;
+	// .blog__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	// .blog__title
+
+	&__title {
+		margin-bottom: 150px;
+	}
+
+	// .blog__wrapper
+	&__wrapper {
+		width: 100%;
+	}
+	// .blog__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(555px, 1fr));
+	}
+
+	// .blog__item
+
+	&__item {
+	}
+}
+
+.blog-item {
+	margin: 0 auto;
+	max-width: 500px;
+	// .blog-item__img
+
+	&__img {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .blog-item__wrapper
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .blog-item__info
+
+	&__info {
+		white-space: nowrap;
+		flex: 1 1 88px;
+		margin-right: 10px;
+		text-align: right;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		color: #808080;
+	}
+
+	// .blog-item__content
+
+	&__content {
+		flex: 1 1 100%;
+		padding: 30px 20px;
+		margin-top: -60px;
+		background-color: #ffffff;
+	}
+
+	// .blog-item__title
+
+	&__title {
+		margin: 0px 0px 30px 0px;
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #0d0d0d;
+	}
+
+	// .blog-item__text
+
+	&__text {
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+
 /*------------------------CLIENTS----------------------------------*/
 
 .clients {
@@ -1253,5 +1349,34 @@ body {
 		&:not(:last-child) {
 			margin-right: 5px;
 		}
+	}
+}
+
+/*------------------------FOOTER----------------------------------*/
+
+.footer {
+	// .footer__container
+
+	&__container {
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .footer__copyright
+
+	&__copyright {
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #0d0d0d;
+	}
+
+	// .footer__messengers
+
+	&__messengers {
+		width: 255px;
 	}
 }
